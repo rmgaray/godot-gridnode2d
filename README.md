@@ -21,4 +21,26 @@ Each `GridNode2D` has three properties:
 
 How to install
 --------------
-TODO
+If you are *not* using git:
+
+1. Clone the repository into a folder inside your project. I usually create a folder for addons, so I'd do something like this:
+
+```
+git clone https://github.com/rmgaray/godot-gridnode2d addons/GridNode2D
+```
+
+2. Activate the plugin under Project Settings. It should be auto-detected by the engine and have the name `GridNode2D`.
+
+If you *are* using git, then I suggest to substitute step (1) from above with this:
+
+```
+git submodule add https://github.com/rmgaray/godot-gridnode2d addons/GridNode2D
+```
+
+This creates a submodule [^1] that you can update whenever you want, so you can keep the add-on and your own project separate.
+
+Try the example project
+-----------------------
+There is an _extremely minimal_ example that showcases the `GridNode2D` in [godot-gridnode2d-example](https://github.com/rmgaray/godot-gridnode2d-example).
+
+[^1]: Read more about submodules [here](https://git-scm.com/book/en/v2/Git-Tools-Submodules)
