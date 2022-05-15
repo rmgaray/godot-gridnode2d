@@ -3,10 +3,10 @@ class_name GridNode2D
 
 enum AnchorSettings {CENTERED, TOP_LEFT}
 
-export (int) var grid_spacing = 64 setget updateSpacing
+export (int) var grid_spacing = 40 setget updateSpacing
 export (Vector2) var grid_position = Vector2(0, 0)
 export (AnchorSettings) var anchor_settings = AnchorSettings.CENTERED
-var offset : Vector2 = Vector2(32, 32)
+var offset : Vector2 = Vector2(20, 20)
 
 # This function is only used to set the position without an animation
 func updatePosition(pos : Vector2):
